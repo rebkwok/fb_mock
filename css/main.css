@@ -123,6 +123,10 @@ body > section {
   padding-bottom: 55px;
 }
 
+.center.testimonials {
+  padding-bottom: 20px;
+}
+
 .scaleIn {
   -webkit-animation-name: scaleIn;
   animation-name: scaleIn;
@@ -174,8 +178,7 @@ body > section {
 *******Header******
 **************************/
 
-#header .search{
-  display: inline-block;
+#header {
 }
 
 .navbar>.container .navbar-brand{
@@ -184,9 +187,9 @@ body > section {
 
 .top-bar {
   padding: 10px 0;
-  background: #191919;
-  border-bottom: 1px solid #222;
-  line-height: 28px;
+  background: #fff;
+  border-bottom: none;
+  line-height: 20px;
 }
 
 .top-number{
@@ -216,9 +219,9 @@ ul.social-share li a {
   display: inline-block;
   color: #fff;
   background: #404040;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
   border-radius: 2px;
 }
@@ -228,92 +231,79 @@ ul.social-share li a:hover {
   color: #fff;
 }
 
-.search i {
-  color: #fff;
-}
+.nav-container {
+  margin-left: 10px;
+  margin-right:10px;
+  padding-right: 0;
 
-input.search-form{
-  background: transparent;
-  border: 0 none;
-  width: 60px;
-  padding: 0 10px;
-  color: #FFF;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -ms-transition: all 400ms;
-  -o-transition: all 400ms;
-  transition: all 400ms;
-}
-
-input.search-form::-webkit-input-placeholder{
-  color: transparent;
-}
-
-input.search-form:hover::-webkit-input-placeholder {
-  color: #fff;
-}
-
-input.search-form:hover {
-  width: 180px;
 }
 
 .navbar-brand {
   padding: 0;
-  margin:0;
+  margin:0 0 5px 0;
 }
 
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #151515;
-  padding: 15px 0;
-  padding-bottom: 0;
+  background: #fff;
+  padding: 0;
+  padding-bottom: 5px;
 }
 
  .navbar-nav{
-  margin-top: 12px;
+  margin-top: 5px;
  }
 
 .navbar-nav>li{
-  margin-left: 35px;
-  padding-bottom: 28px;
+  margin-left: 5px;
+  padding-bottom: 5px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-  padding: 5px 12px;
+.navbar-default .navbar-nav > li > a {
+  padding: 5px 15px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #000;
   line-height: 24px;
   display: inline-block;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover{
-	background-color: rgba(6, 105, 58, 0.8);
-  color: #fff;
+.navbar-default .navbar-nav > li > a:hover{
+	/*background-color: rgba(6, 105, 58, 0.8);*/
+  color: rgba(6, 105, 58, 0.8);
+  border-bottom: solid 2px #e7e7e7;
+  border-radius: 0;
 }
 
-.navbar-inverse {
+.navbar-default {
   border: none;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-default .navbar-brand {
   font-size: 36px;
-  line-height: 50px;
+  line-height: 30px;
   color: #fff;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: rgba(6, 105, 58, 0.8);
-  color: #fff;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  /*background-color: rgba(6, 105, 58, 0.8);*/
+  /*color: #fff;*/
+  color: rgba(6, 105, 58, 0.8);
+  background-color: #fff;
+  border-bottom: solid 2px rgba(6, 105, 58, 0.8);
+  border-radius: 0;
+
+
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu {
+
+.navbar-default .navbar-nav .dropdown-menu {
   background-color: rgba(0,0,0,.85);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -326,33 +316,33 @@ input.search-form:hover {
   left: 0;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu:before{
+.navbar-default .navbar-nav .dropdown-menu:before{
   position: absolute;
   top:0;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu > li > a {
+.navbar-default .navbar-nav .dropdown-menu > li > a {
   padding: 8px 15px;
   color: #fff;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
-.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
-.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+.navbar-default .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-default .navbar-nav .dropdown-menu > li:focus > a,
+.navbar-default .navbar-nav .dropdown-menu > li.active > a {
   background-color: rgba(6, 105, 58, 0.8);
   color: #fff;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+.navbar-default .navbar-nav .dropdown-menu > li:last-child > a {
   border-radius: 0 0 3px 3px;
 }
 
-.navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+.navbar-default .navbar-nav .dropdown-menu > li.divider {
   background-color: transparent;
 }
 
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
   border-top: 0;
   padding-bottom: 0;
 }
@@ -373,7 +363,8 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  margin-top: 150px;
+  margin-left: 22px;
+  margin-top: 110px;
 }
 
 #main-slider .carousel .slide-margin{
@@ -384,8 +375,21 @@ input.search-form:hover {
   color: #fff;
 }
 
+.box{
+      margin: auto;
+	  background: #eee;
+
+	  border: 3px solid transparent;
+      background: red; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+
+}
+
 #main-slider .carousel .btn-slide {
-  padding: 8px 20px;
+  padding: 8px 40px;
   background: rgba(6, 105, 58, 0.8);
   color: #fff;
   border-radius: 4px;
@@ -565,9 +569,16 @@ input.search-form:hover {
   text-align:center;
   background: #ffffff;
   color: rgba(6, 105, 58, 0.8);
-  border: 3px solid #ffffff;
-  box-shadow: inset 0 0 0 5px #f2f2f2;
-  -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;
+  /*border: 3px solid #ffffff;*/
+  border: 5px solid transparent;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+
+  box-shadow: inset 0 0 0 55px #f2f2f2;
+  -webkit-box-shadow: inset 0 0 0 55px #f2f2f2;
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
   -o-transition: 500ms;
@@ -923,7 +934,7 @@ a.accordion-toggle  i{
 }
 
 .testimonial-inner {
-  color:#858586;
+  color: lightgrey;
   font-size: 14px;
 }
 
@@ -975,7 +986,7 @@ a.accordion-toggle  i{
   width: 20%;
 }
 
-#conatcat-info{
+#contact-info{
   /*background: #fff url(../images/logo_contact.png) no-repeat 90% 0;*/
   padding: 30px 0;
 }
@@ -2502,12 +2513,30 @@ shortcodes page css
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #fff;
-  background: #2e2e2e;
+  color: #2e2e2e;
+  background: #fff;
+
+}
+
+#footer > .footerbox {
+  border-top: 4px solid transparent;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+
+}
+
+#footer > .footerbox .footerbox-inner {
+      background: #fff;
+}
+#footer > .footerbox > .container {
+    background: #fff;
 }
 
 #footer a {
-  color: #fff;
+  color: #2e2e2e;
 }
 
 #footer a:hover {
@@ -2526,7 +2555,30 @@ shortcodes page css
 }
 
 
+/*Scrolling Testimonials*/
+.testimonials-container {
+    width: 100%;
+    height: 20em;
+    margin: 1em auto;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    box-sizing: border-box;
+}
 
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
 
+.marquee:hover {
+    animation-play-state: paused;
+}
 
-
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -11em }
+}
