@@ -115,7 +115,7 @@ a:focus {
 }
 
 body > section {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .center {
@@ -178,11 +178,31 @@ body > section {
 *******Header******
 **************************/
 
-#header {
+header > .headerbox {
+  border-bottom: 4px solid transparent;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }
+
+.homepage > header > .headerbox {
+  background: #fff;
+}
+
+header > .headerbox .headerbox-inner {
+      background: none;
+}
+
 
 .navbar>.container .navbar-brand{
   margin-left: 0;
+}
+
+.navbar-brand > img {
+  max-height:80px;
+  margin-top:-30px;
 }
 
 .top-bar {
@@ -202,6 +222,7 @@ body > section {
 
 .social{
   text-align: right;
+  margin-right: 23px;
 }
 
 .social-share{
@@ -230,6 +251,63 @@ ul.social-share li a:hover {
   background: rgba(6, 105, 58, 0.8);
   color: #fff;
 }
+
+ul.social-share li.dropdown a {
+  padding-left:10px;
+  background: none;
+  width: 100%;
+  color: black;
+}
+
+ul.social-share li.dropdown a i {
+  padding-left: 10px;
+}
+
+ul.social-share li.dropdown ul {
+  min-width: 100px;
+}
+
+ul.social-share li.dropdown ul li a {
+  color: #fff;
+}
+
+
+.social-share .dropdown-menu {
+  background-color: rgba(0,0,0,.85);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  border: 0;
+  padding: 0;
+  margin-top: 0;
+  border-top: 0;
+  border-radius: 0;
+}
+
+.social-share .dropdown-menu:before{
+  position: absolute;
+  top:0;
+}
+
+.social-share .dropdown-menu > li > a {
+  color: #fff;
+  padding: 5px 0 5px 0;
+}
+
+.social-share .dropdown-menu > li:hover > a,
+.social-share .dropdown-menu > li:focus > a,
+.social-share .dropdown-menu > li.active > a {
+  color: rgba(6, 105, 58, 0.8);
+}
+
+.social-share .dropdown-menu > li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+
+.social-share .dropdown-menu > li.divider {
+  background-color: transparent;
+}
+
 
 .nav-container {
   margin-left: 10px;
@@ -269,11 +347,21 @@ ul.social-share li a:hover {
   display: inline-block;
 }
 
+.navbar-default .navbar-nav > li > a.contact {
+  background-color: rgba(6, 105, 58, 0.8);
+  color: #fff;
+}
+
 .navbar-default .navbar-nav > li > a:hover{
 	/*background-color: rgba(6, 105, 58, 0.8);*/
   color: rgba(6, 105, 58, 0.8);
   border-bottom: solid 2px #e7e7e7;
   border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a.contact:hover {
+  border-radius: 3px;
+  background-color:#e7e7e7
 }
 
 .navbar-default {
@@ -378,7 +466,6 @@ ul.social-share li a:hover {
 .box{
       margin: auto;
 	  background: #eee;
-
 	  border: 3px solid transparent;
       background: red; /* For browsers that do not support gradients */
       background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
@@ -445,7 +532,6 @@ ul.social-share li a:hover {
   height: 40px;
   line-height: 40px;
   width: 40px;
-  line-height: 40px;
   text-align: center;
   border-radius: 4px;
   z-index: 5;
@@ -595,23 +681,23 @@ ul.social-share li a:hover {
   border: 3px solid rgba(6, 105, 58, 0.8);
 }
 
-#recent-works .col-xs-12.col-sm-4.col-md-3{
+#flexibeast-gallery .col-xs-6.col-sm-4.col-md-3{
   padding: 0;
 }
 
-#recent-works{
+#flexibeast-gallery{
     padding-bottom: 70px;
 }
 
-.recent-work-wrap {
+.flexibeast-gallery-wrap {
   position: relative;
 }
 
-.recent-work-wrap img{
+.flexibeast-gallery-wrap img{
   width: 100%;
 }
 
-.recent-work-wrap .recent-work-inner{
+.flexibeast-gallery-wrap .flexibeast-gallery-inner{
   top: 0;
   background: transparent;
   opacity: .8;
@@ -620,16 +706,18 @@ ul.social-share li a:hover {
   margin-bottom: 0;
 }
 
-.recent-work-wrap .recent-work-inner h3{
+.flexibeast-gallery-wrap .flexibeast-gallery-inner h3{
   margin: 10px 0;
-}
-
-.recent-work-wrap .recent-work-inner h3 a{
   font-size: 24px;
   color: #fff;
 }
 
-.recent-work-wrap .overlay {
+.flexibeast-gallery-wrap .flexibeast-gallery-inner h3 a{
+  font-size: 24px;
+  color: #fff;
+}
+
+.flexibeast-gallery-wrap .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -647,7 +735,7 @@ ul.social-share li a:hover {
   padding: 30px;
 }
 
-.recent-work-wrap .overlay .preview {
+.flexibeast-gallery-wrap .overlay .preview {
   bottom: 0;
   display: inline-block;
   height: 35px;
@@ -658,7 +746,7 @@ ul.social-share li a:hover {
   color: #fff;
 }
 
-.recent-work-wrap:hover .overlay {
+.flexibeast-gallery-wrap:hover .overlay {
   opacity: 1;
 }
 
@@ -668,8 +756,13 @@ ul.social-share li a:hover {
 }
 
 #services .lead,
-#services h2{
+#services h2,
+#services a {
   color: #000;
+}
+
+#services a:hover {
+  background-color: rgba(6, 105, 58, 0.2);
 }
 
 .services-wrap {
@@ -677,6 +770,11 @@ ul.social-share li a:hover {
   background: #fff;
   border-radius: 4px;
   margin: 0 0 40px;
+}
+
+.services-wrap:hover {
+    background:  rgba(6, 105, 58, 0.2);
+
 }
 
 .services-wrap h3 {
@@ -959,17 +1057,17 @@ a.accordion-toggle  i{
   border-bottom: 0 none;
 }
 
-#partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+#testimonials {
+  background: url(../images/fb_group.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 
-#partner {
+#testimonials {
   color: #fff;
   text-align: center;
 }
 
-#partner h2, 
+#testimonials h2,
 #partner h3 {
   color: #fff;
 }
@@ -1001,6 +1099,12 @@ a.accordion-toggle  i{
   text-align: center;
   border-radius: 10px;
 }
+
+.contact-info > div > a > i:hover {
+  background: rgba(6, 105, 58, 0.8);
+  color: #fff;
+}
+
 
 .contact-info h2{
   margin-top: 0;
@@ -2581,4 +2685,11 @@ shortcodes page css
 @keyframes marquee {
     0%   { top:   8em }
     100% { top: -11em }
+}
+
+.center img {
+  display: block;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }

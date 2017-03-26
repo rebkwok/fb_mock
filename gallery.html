@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Flexibeast</title>
+
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+</head><!--/head-->
+
+<body class="gallery">
+
+    <header id="header">
+        <div class="headerbox">
+        <div class="headerbox-inner">
+        <div class="top-bar">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <!--{% if not request.user.is_authenticated %}-->
+                                <!--<li>Sign in</li>-->
+                                <!--{% endif %}-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li class="pull-left"><a href="#">Profile</a></li>
+                                        <li class="pull-left"><a href="#">Change email</a></li>
+                                        <li class="pull-left"><a href="#">Change password</a></li>
+                                        <!--{% if request.user.is_staff %}-->
+                                        <!--<li class="pull-left"><a href="#">Admin</a></li>-->
+                                        <!--{% endif %}-->
+                                        <li class="pull-left"><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                       </div>
+                    </div>
+            </div>
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-default" role="banner">
+            <div class="nav-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand pull-left" href="index.html"><img src="images/logo1.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="#">Classes and Workshops</a></li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Timetable</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class='contact' href="#contact-info">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </div>
+    </div>
+    </header><!--/header-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="center">
+               <h2>Gallery</h2>
+               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".category1">Category 1</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".category2">Category 2</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".category3">Category 3</a></li>
+            </ul><!--/#portfolio-filter-->
+
+            <div class="row">
+                <div class="portfolio-items">
+                    <div class="portfolio-item category1 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category2 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category3 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>        
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category2 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+          
+                    <div class="portfolio-item category3 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item5.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category1 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item6.jpg" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>         
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category2 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item category1 col-xs-12 col-sm-4 col-md-3">
+                        <div class="flexibeast-gallery-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
+                            <div class="overlay">
+                                <div class="flexibeast-gallery-inner">
+                                    <h3>Title</h3>
+                                    <p>Photo Caption</p>
+                                    <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                </div>
+            </div>
+        </div>
+    </section><!--/#portfolio-item-->
+    
+
+    <footer id="footer" class="midnight-blue">
+        <div class="footerbox">
+        <div class="footerbox-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
